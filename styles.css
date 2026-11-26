@@ -296,6 +296,22 @@ main {
 
 }
 
+@media (max-width: 1200px) and (min-width: 761px) {
+    .site-header {
+        grid-template-columns: 170px minmax(0, 1fr);
+        grid-template-areas:
+            "profile intro"
+            "nav nav";
+        min-height: 0;
+    }
+
+    .top-buttons {
+        width: 100%;
+        justify-content: flex-end;
+        margin-left: 0;
+    }
+}
+
 a,
 button,
 summary {
